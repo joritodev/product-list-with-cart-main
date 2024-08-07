@@ -1,17 +1,26 @@
+import Image from "next/image";
 import { AddToCart } from "../icons/add-to-cart";
+import "./product.scss";
+import { DecrementIcon } from "../icons/decrement-icon";
+import { IncrementIcon } from "../icons/increment-icon";
 
 interface ProductProps {
-    image: string | undefined;
+    image: string;
     productType: string;
-    productName: string;
-    productPrice: number;
+    productName?: string;
+    productPrice?: string;
 }
-export function Product({ image,productType, productName, productPrice }: ProductProps) {
+export function Product({ image, productType, productName, productPrice }: ProductProps) {
     return (
         <div className="box">
-            <div className="img-addcart">
-                <img src={image} alt={productName} />
-                <a><AddToCart /> Add to Cart</a>
+            <div className="img"></div>
+            <div className="cart">
+                <a className="addcart">
+                    <DecrementIcon />
+                    <AddToCart />
+                    <span>Add to Cart</span>
+                    <IncrementIcon />
+                </a>
             </div>
             <div className="productName-price">
                 <span>{productType}</span>

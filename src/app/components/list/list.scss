@@ -1,0 +1,21 @@
+.box-grid {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+
+    .list-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "product"
+        "product"
+        "product"
+        "product"
+        "product"
+        "product"
+        "product"
+        "product"
+        "product"
+        "cart";
+    }
+}

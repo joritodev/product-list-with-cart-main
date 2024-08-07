@@ -1,5 +1,17 @@
 :root {
-  
+  --text-primary: hsl(14, 65%, 9%);
+  --text-secondary: hsl(12, 20%, 44%);
+  --text-price: hsl(14, 86%, 42%);
+
+  --bg-primary: hsl(13, 31%, 94%);
+  --bg-secondary: hsl(14, 25%, 72%);
+
+  --border-primary: hsl(14, 25%, 72%);
+  --border-seconday: hsl(14, 86%, 42%);
+
+  --btn-primary: hsl(20, 50%, 98%);
+  --btn-secondary: hsl(14, 86%, 42%);
+
 }
 
 * {
