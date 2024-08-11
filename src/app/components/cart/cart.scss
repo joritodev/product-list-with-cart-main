@@ -1,0 +1,31 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--btn-primary);
+  border-radius: 12px;
+  height: auto;
+  grid-area: "cart";
+
+  h2 {
+    padding-top: 15px;
+    padding-left: 20px;
+    color: var(--btn-secondary);
+    font-weight: 700;
+  }
+
+  .emptyCartDetail {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+  }
+}
